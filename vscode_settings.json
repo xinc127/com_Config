@@ -1,0 +1,82 @@
+{
+  "window.zoomLevel": 2,
+  //全局搜索
+  "search.exclude": {
+    "system/": true,
+    "!/system/**/*.ps*": true
+  },
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.statusBar.feedback.visible": false,
+  // 特效
+  "powermode.enabled": true,
+  "powermode.enableShake": false,
+  // "powermode.presets": "flames",
+
+  // "emmet.syntaxProfiles": {
+  //   "vue-html": "html",
+  //   "vue": "html"
+  // },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  // "liveServer.settings.donotShowInfoMsg": true,
+  // "liveServer.settings.donotVerifyTags": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "terminal.integrated.rendererType": "dom",
+  // 配置对.vue.html文件中的js代码段进行检测
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "vue",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "eslint.options": {
+    // "plugins": ["html"]
+  },
+  "eslint.codeAction.showDocumentation": {
+    "enable": false
+  },
+  // 每次保存的时候将代码按eslint格式进行修复
+  "eslint.autoFixOnSave": true,
+  // 每次保存的时候自动格式化
+  "editor.formatOnSave": true,
+  // 让prettier使用eslint的代码格式进行校验
+  "prettier.eslintIntegration": true,
+  "prettier.printWidth": 1000,
+  // 声明结尾使用分号(默认true)
+  "prettier.semi": false,
+  // 使用单引号替代双引号
+  "prettier.singleQuote": true,
+  // 多行使用拖尾逗号（默认none）
+  "prettier.trailingComma": "all",
+  // 这个按用户自身习惯选择
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_line_length": 160,
+      "wrap_attributes": "auto",
+      "end_with_newline": false
+      //将属性换行到新行[auto | force | force-aligned | force-expand-multiline] [“auto”]
+    },
+    "prettier": {
+      "eslintIntegration": true,
+      "semi": false,
+      "singleQuote": true,
+      "trailingComma": "all"
+    }
+  },
+  // 屏蔽vetur的js格式化
+  // "vetur.format.defaultFormatter.js": "none",
+  "open-in-browser.default": "chrome",
+  "vsicons.dontShowNewVersionMessage": true
+  // "javascript.format.enable": false
+}
